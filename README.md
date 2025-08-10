@@ -73,5 +73,3 @@ You can customize the structure in `default.project.json`.
 * Avoid losing scripts due to Studio crashes.
 
 ---
-
-If you want, I can also make you a **pre-configured default.project.json** for Roblox simulator-style games so you can start right away. Would you like me to add that?
