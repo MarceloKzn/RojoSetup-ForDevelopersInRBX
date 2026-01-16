@@ -2,77 +2,40 @@
   "name": "Rbx-game",
   "tree": {
     "$className": "DataModel",
-
     "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+
+      "Services": {
+        "$path": "src/ReplicatedStorage/services"
+      },
       "Shared": {
-        "$path": "src/shared"
-      },
-      "Packages": {
-        "$path": "Packages"
+        "$path": "src/ReplicatedStorage/shared"
       }
-    },
+    }
+  },
 
-    "ServerScriptService": {
-      "Server": {
-        "$path": "src/server"
-      },
-      "ServerPackages": {
-        "$path": "ServerPackages"
-      }
-    },
+  "ServerScriptService": {
+    "$className": "ServerScriptService",
 
-    "StarterPlayer": {
-      "StarterPlayerScripts": {
-        "Client": {
-          "$path": "src/client"
-        }
-      }
-    },
+    "Server": {
+      "$path": "src/ServerScriptService/server"
+    }
+  },
 
-    "Workspace": {
-      "$properties": {
-        "FilteringEnabled": true
+  "StarterPlayer": {
+    "StarterPlayerScripts": {
+      "Client": {
+        "$path": "src/StarterPlayer/client"
       },
-      "Baseplate": {
-        "$className": "Part",
-        "$properties": {
-          "Anchored": true,
-          "Color": [
-            0.38823,
-            0.37254,
-            0.38823
-          ],
-          "Locked": true,
-          "Position": [
-            0,
-            -10,
-            0
-          ],
-          "Size": [
-            512,
-            20,
-            512
-          ]
-        }
+      "Controllers": {
+        "$path": "src/StarterPlayer/controller"
       }
-    },
-    "Lighting": {
-      "$properties": {
-        "Ambient": [
-          0,
-          0,
-          0
-        ],
-        "Brightness": 2,
-        "GlobalShadows": true,
-        "Outlines": false,
-        "Technology": "Voxel"
-      }
-    },
-    "SoundService": {
-      "$properties": {
-        "RespectFilteringEnabled": true
-      }
+    }
+  },
+
+  "StarterGui": {
+    "UIControl": {
+      "$path": "src/StarterPlayer/UI"
     }
   }
 }
