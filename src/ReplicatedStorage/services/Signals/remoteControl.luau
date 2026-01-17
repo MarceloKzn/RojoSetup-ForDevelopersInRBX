@@ -1,0 +1,3 @@
+local remoteControl = {}
+
+return remoteControl
